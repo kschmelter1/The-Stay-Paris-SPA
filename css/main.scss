@@ -43,12 +43,12 @@ html, body {
   width: 450px;
   height: 650px;
   max-height: 100%;
-  overflow: scroll;
     @include transition(left .5s linear);
   @media only screen and (max-width: 981px) {
     top: 0;
     height: auto;
     width:100%;
+    overflow: scroll;
   }
 }
 .content {padding: 26px;}
@@ -96,4 +96,9 @@ html, body {
 }
 #bladeDesc {
   font-family: $bodyFont;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }

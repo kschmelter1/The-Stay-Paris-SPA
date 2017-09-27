@@ -108,7 +108,7 @@ function initMap() {
         new google.maps.LatLng(62.400471, -150.005608));
 
     var overlayImg = 'img/map-overlay.png';
-    overlay = new vignetteOverlay(pverlaybounds, overlayImg, map);
+    overlay = new vignetteOverlay(overlaybounds, overlayImg, map);
 
     //Close blade when map is clicked on
     google.maps.event.addListener(map, 'click', function() {
